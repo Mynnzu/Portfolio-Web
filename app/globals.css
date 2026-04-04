@@ -1,0 +1,87 @@
+/* Explicit v4 entry — avoids Turbopack resolving the bare "tailwindcss" import to the old tailwind.css path */
+@import "tailwindcss/index.css";
+
+:root {
+  --bg-primary: #0a0a0f;
+  --bg-secondary: #111118;
+  --accent-primary: #00d4ff;
+  --accent-secondary: #7c3aed;
+  --text-primary: #f0f0f0;
+  --text-muted: #6b7280;
+  --border: #1e1e2e;
+}
+
+@theme inline {
+  --font-sans: var(--font-dm-sans);
+  --font-heading: var(--font-syne);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: radial-gradient(circle at 20% 15%, rgba(0, 212, 255, 0.08), transparent 24%),
+    var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-dm-sans), sans-serif;
+  overflow-x: hidden;
+}
+
+* {
+  border-color: var(--border);
+}
+
+.section-container {
+  @apply mx-auto w-[92%] max-w-6xl;
+}
+
+.section-title {
+  font-family: var(--font-syne), sans-serif;
+  @apply text-3xl md:text-5xl font-bold tracking-tight;
+}
+
+.muted-text {
+  color: var(--text-muted);
+}
+
+.glass-card {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.01));
+  border: 1px solid var(--border);
+  @apply backdrop-blur-md;
+}
+
+.mesh-overlay {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 36px 36px;
+}
+
+section[id] {
+  scroll-margin-top: 90px;
+}
+
+.name-glitch {
+  position: relative;
+}
+
+.name-glitch::before,
+.name-glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.name-glitch:hover::before {
+  opacity: 0.65;
+  color: var(--accent-primary);
+  transform: translate(2px, -1px);
+}
+
+.name-glitch:hover::after {
+  opacity: 0.45;
+  color: #7cff6b;
+  transform: translate(-2px, 1px);
+}
