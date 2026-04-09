@@ -1,6 +1,7 @@
 export type SkillItem = {
   name: string;
   icon: string;
+  color: string;
 };
 
 export type Project = {
@@ -27,55 +28,50 @@ export const navItems = [
 
 export const titleCycle = [
   "Junior Software Developer",
-  "Full Stack Developer",
+  "web Developer",
   "Problem Solver",
   "Open Source Contributor",
 ] as const;
 
 export const skills: SkillItem[] = [
-  { name: "React", icon: "⚛️" },
-  { name: "Next.js", icon: "▲" },
-  { name: "TypeScript", icon: "📘" },
-  { name: "Node.js", icon: "🟢" },
-  { name: "Python", icon: "🐍" },
-  { name: "PostgreSQL", icon: "🐘" },
-  { name: "Docker", icon: "🐳" },
-  { name: "AWS", icon: "☁️" },
-  { name: "Git", icon: "🔧" },
+  { name: "React", icon: "⚛️", color: "#61DAFB" },
+  { name: "Next.js", icon: "▲", color: "#ffffff" },
+  { name: "TypeScript", icon: "TS", color: "#3178C6" },
+  { name: "Node.js", icon: "⬢", color: "#68A063" },
+  { name: "Python", icon: "🐍", color: "#FFD43B" },
+  { name: "PostgreSQL", icon: "🐘", color: "#336791" },
+  { name: "Docker", icon: "🐳", color: "#2496ED" },
+  { name: "AWS", icon: "☁️", color: "#FF9900" },
+  { name: "Git", icon: "⎇", color: "#F05032" },
+  { name: "Figma", icon: "◆", color: "#A259FF" },
+  { name: "TailwindCSS", icon: "🌊", color: "#06B6D4" },
+  { name: "MongoDB", icon: "🍃", color: "#47A248" },
 ];
 
 export const projects: Project[] = [
   {
-    name: "PulseOps Dashboard",
+    name: "Cutimate",
     description:
-      "Real-time observability dashboard for distributed services with anomaly detection workflows.",
-    tags: ["Next.js", "TypeScript", "WebSocket", "PostgreSQL"],
-    githubUrl: "https://github.com/placeholder/pulseops-dashboard",
-    liveUrl: "https://example.com/pulseops-dashboard",
+      "An all-in-one planner that seamlessly integrates all Malaysia public holidays, helping users stay organized with localized context.",
+    tags: ["Next.js", "TypeScript", "Planner", "Full Stack"],
+    githubUrl: "https://github.com/mynnzu/cutimate",
+    liveUrl: "https://cutimate.com",
   },
   {
-    name: "Kernel CI Orchestrator",
+    name: "DeenSeek",
     description:
-      "Automated pipeline manager for containerized CI jobs across multiple cloud environments.",
-    tags: ["Node.js", "Docker", "AWS", "Redis"],
-    githubUrl: "https://github.com/placeholder/kernel-ci-orchestrator",
-    liveUrl: "https://example.com/kernel-ci",
+      "A Shariah-compliant AI platform providing verified Islamic knowledge with traceable citations and persistent chat history for deep learning.",
+    tags: ["AI", "LLM", "Shariah-compliant", "Next.js"],
+    githubUrl: "https://github.com/mynnzu/deenseek",
+    liveUrl: "https://deenseek.ai",
   },
   {
-    name: "CodeSight Studio",
+    name: "Aura",
     description:
-      "Developer productivity platform combining code insights, profiling traces, and release analytics.",
-    tags: ["React", "Framer Motion", "GraphQL", "Prisma"],
-    githubUrl: "https://github.com/placeholder/codesight-studio",
-    liveUrl: "https://example.com/codesight",
-  },
-  {
-    name: "Atlas API Gateway",
-    description:
-      "High-throughput API gateway with policy-based routing, rate limiting, and service health scoring.",
-    tags: ["TypeScript", "Fastify", "PostgreSQL", "Kubernetes"],
-    githubUrl: "https://github.com/placeholder/atlas-gateway",
-    liveUrl: "https://example.com/atlas-gateway",
+      "An AI-powered space designer and virtual consultant that helps users visualize and plan interior spaces with intelligent design suggestions.",
+    tags: ["AI", "React", "Design", "Virtual Assistant"],
+    githubUrl: "https://github.com/mynnzu/aura",
+    liveUrl: "https://aura-design.ai",
   },
 ];
 

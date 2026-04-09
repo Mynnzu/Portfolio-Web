@@ -57,10 +57,32 @@ export default function Hero() {
             Abdul Muhaimin
           </span>
         </motion.h1>
+        <motion.p
+          initial={{ opacity: 0, y: 18 }}
+          animate={{ 
+            opacity: [1, 0.5, 1],
+            scale: [1, 1.02, 1],
+            textShadow: [
+              "0 0 12px rgba(124,255,107,0.3)",
+              "0 0 24px rgba(124,255,107,0.6)",
+              "0 0 12px rgba(124,255,107,0.3)"
+            ],
+            y: 0 
+          }}
+          transition={{ 
+            opacity: { repeat: Infinity, duration: 2.5, ease: "easeInOut" },
+            scale: { repeat: Infinity, duration: 2.5, ease: "easeInOut" },
+            textShadow: { repeat: Infinity, duration: 2.5, ease: "easeInOut" },
+            y: { delay: 0.08, type: "spring", stiffness: 120, damping: 20 }
+          }}
+          className="mt-3 font-[var(--font-syne)] text-sm font-extrabold uppercase tracking-[0.2em] text-[#7cff6b] md:text-base"
+        >
+          Seeking internship opportunities
+        </motion.p>
         <motion.h2
           initial={{ opacity: 0, y: 26 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.1, type: "spring", stiffness: 100, damping: 20 }}
+          transition={{ delay: 0.12, type: "spring", stiffness: 100, damping: 20 }}
           className="mt-4 min-h-10 font-[var(--font-syne)] text-2xl text-[var(--accent-primary)] md:text-4xl"
         >
           <TypingText key={title} text={title} />
@@ -69,7 +91,7 @@ export default function Hero() {
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.15, type: "spring", stiffness: 110, damping: 20 }}
+          transition={{ delay: 0.18, type: "spring", stiffness: 110, damping: 20 }}
           className="mt-10 flex flex-wrap gap-4"
         >
           <a

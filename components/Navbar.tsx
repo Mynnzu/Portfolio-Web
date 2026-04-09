@@ -49,9 +49,7 @@ export default function Navbar() {
       className="fixed top-0 z-50 w-full border-b border-[var(--border)] bg-[rgba(10,10,15,0.78)] backdrop-blur-xl"
     >
       <nav className="section-container flex h-16 items-center justify-between">
-        <a href="#home" className="font-[var(--font-syne)] text-lg font-bold tracking-wide">
-          AC
-        </a>
+        <div />
         <ul className="hidden items-center gap-6 md:flex">
           {navItems.map((item) => (
             <li key={item.href}>
