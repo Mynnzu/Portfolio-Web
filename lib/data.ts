@@ -77,33 +77,21 @@ export const projects: Project[] = [
 
 export const experience: Experience[] = [
   {
-    company: "Vertex Labs",
-    role: "Senior Software Engineer",
-    dates: "2023 - Present",
+    company: "Professional Development",
+    role: "E-Sports Level 2 Course",
+    dates: "Coursework",
     achievements: [
-      "Led migration to Next.js App Router, reducing page load latency by 38%.",
-      "Designed reusable component architecture used across 5 product teams.",
-      "Implemented CI/CD quality gates that cut deployment regressions by 45%.",
+      "Tournament Coordination: Gained practical skills in managing tournament logistics, including scheduling, bracket management, and real-time match oversight.",
+      "Event Operations: Developed experience in venue coordination, crowd management, and ensuring technical requirements are met for competitive gaming environments.",
+      "Industry Protocols: Acquired foundational knowledge of esports governance, event broadcasting standards, and maintaining fair-play regulations during live events.",
     ],
   },
   {
-    company: "Scaleforge Systems",
-    role: "Full Stack Engineer",
-    dates: "2021 - 2023",
+    company: "Community",
+    role: "Google Developer Group Participant",
+    dates: "Participant",
     achievements: [
-      "Built internal tooling for release observability used by 120+ engineers.",
-      "Shipped event-driven backend services handling over 8M requests/day.",
-      "Collaborated with design to deliver a11y-first frontend standards.",
-    ],
-  },
-  {
-    company: "Nova Byte",
-    role: "Software Engineer",
-    dates: "2019 - 2021",
-    achievements: [
-      "Developed customer dashboard features increasing retention by 17%.",
-      "Optimized SQL queries and indexes, reducing report generation time by 52%.",
-      "Introduced test automation strategy for critical business workflows.",
+      "Participated in Google Developer Group community programs, networking sessions, and collaborative learning activities.",
     ],
   },
 ];

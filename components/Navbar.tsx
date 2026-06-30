@@ -59,6 +59,13 @@ export default function Navbar() {
             </li>
           ))}
         </ul>
+        <a
+          href="/my-resume.pdf"
+          className="hidden rounded-md border border-[var(--border)] px-4 py-2 text-sm text-[var(--text-primary)] transition hover:border-[var(--accent-primary)] hover:text-[var(--accent-primary)] md:inline-flex"
+          download
+        >
+          Resume
+        </a>
         <button
           aria-label="Toggle Menu"
           onClick={() => setIsOpen((prev) => !prev)}
@@ -81,6 +88,14 @@ export default function Navbar() {
             transition={{ type: "spring", stiffness: 140, damping: 22 }}
             className="glass-card absolute right-0 top-16 w-64 rounded-bl-2xl border-l border-t p-6 md:hidden"
           >
+            <a
+              href="/my-resume.pdf"
+              className="mb-6 inline-flex w-full items-center justify-center rounded-md border border-[var(--border)] px-4 py-2 text-sm text-[var(--text-primary)] transition hover:border-[var(--accent-primary)] hover:text-[var(--accent-primary)]"
+              download
+              onClick={() => setIsOpen(false)}
+            >
+              Resume
+            </a>
             <ul className="space-y-4">
               {navItems.map((item) => (
                 <li key={item.href}>
