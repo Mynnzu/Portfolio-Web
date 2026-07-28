@@ -77,6 +77,15 @@ export const projects: Project[] = [
 
 export const experience: Experience[] = [
   {
+    company: "Freelance",
+    role: "Freelance Developer",
+    dates: "Ongoing",
+    achievements: [
+      "Final Year Project (FYP) Assistance: Mentored and collaborated with university students across various courses to successfully complete and deliver their Final Year Projects, providing full-stack development, logic implementation, and technical debugging.",
+      "Google Gemini Educator Course Service: Provided end-to-end guidance and technical assistance for teachers and educators to complete the Google Gemini Educator certification, enabling them to leverage modern AI tools in teaching.",
+    ],
+  },
+  {
     company: "Professional Development",
     role: "E-Sports Level 2 Course",
     dates: "Coursework",
