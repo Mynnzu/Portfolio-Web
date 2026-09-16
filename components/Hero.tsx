@@ -1,8 +1,8 @@
 "use client";
 
+import { titleCycle } from "@/lib/data";
 import { motion } from "framer-motion";
 import { useEffect, useMemo, useState } from "react";
-import { titleCycle } from "@/lib/data";
 
 export default function Hero() {
   const [titleIndex, setTitleIndex] = useState(0);
@@ -118,17 +118,6 @@ export default function Hero() {
           className="relative hidden justify-center lg:flex"
         >
           <div className="relative aspect-square w-full max-w-[390px] overflow-hidden rounded-full border border-[rgba(0,229,255,0.2)] bg-white/[0.03] shadow-xl shadow-black/25">
-            {/* Status badge */}
-            <div className="absolute top-4 left-4 z-40 inline-flex items-center gap-2 rounded-full border border-[rgba(0,229,255,0.35)] bg-black/55 px-3 py-1.5 backdrop-blur-md">
-              <span className="relative flex h-2.5 w-2.5">
-                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[rgb(0,229,255)] opacity-70" />
-                <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-[rgb(0,229,255)]" />
-              </span>
-              <span className="text-[10px] font-semibold uppercase tracking-[0.18em] text-[rgb(204,250,255)]">
-                Open to internship · 2025
-              </span>
-            </div>
-
             {/* Glossy overlay */}
             <div className="pointer-events-none absolute inset-0 z-20 bg-gradient-to-br from-white/10 via-transparent to-transparent opacity-40" />
             
@@ -137,7 +126,7 @@ export default function Hero() {
               <img 
                 src="/profile.jpeg" 
                 alt="Abdul Muhaimin"
-                className="h-full w-full object-cover object-center transition-transform duration-700 group-hover/img:scale-[1.03]"
+                className="h-full w-full scale-[1.18] object-cover object-[center_20%] transition-transform duration-700 group-hover/img:scale-[1.22]"
                 onError={(e) => {
                   e.currentTarget.style.display = 'none';
                   const parent = e.currentTarget.parentElement;
